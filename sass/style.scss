@@ -24,6 +24,29 @@ body {
 }
 
 /* END GENERALES */
+
+// MAPS //
+
+$colores: (
+    verde: #5bab54,
+    verdeclarito: #a3e0ae, 
+    blanco: #fff,
+    negro: #1b1b1b,
+    negroclarito: #303030,
+    gris: #494949,
+);
+
+// END MAPS //
+
+// MIXIN //
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+// END MIXIN //
+
 @import "header.scss";
 @import "index.scss";
 @import "cuenta.scss";

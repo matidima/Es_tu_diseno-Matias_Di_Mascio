@@ -11,7 +11,7 @@ ul {
   padding: 0 !important;
   margin: 0 !important; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .carrito .carritoTotal span {
   margin: 0 !important; }
 
 body {
@@ -25,7 +25,7 @@ header {
   display: flex;
   flex-direction: column; }
   header a {
-    color: white; }
+    color: #fff; }
   header .navSuperior {
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ header {
         align-items: center;
         margin: 20px 0; }
         header .navSuperior .logo a:hover {
-          color: white; }
+          color: #fff; }
         header .navSuperior .logo a img {
           height: 75px;
           border-radius: 50%; }
@@ -55,7 +55,7 @@ header {
         width: 9rem;
         padding-left: 7px;
         line-height: 25px;
-        background: white;
+        background: #fff;
         color: #63ad58;
         border: none;
         border-radius: 18px;
@@ -64,7 +64,7 @@ header {
           background: #e2e2e2; }
         header .navSuperior .buscador input:focus {
           background: #5a5a5a;
-          color: white;
+          color: #fff;
           outline: none; }
       header .navSuperior .buscador a {
         transition: all 0.25s; }
@@ -78,7 +78,7 @@ header {
       justify-content: center;
       align-items: center;
       font-size: 25px;
-      color: white; }
+      color: #fff; }
       header .navSuperior .menuHamburguesa:active {
         color: #1b1b1b; }
     header .navSuperior input#menu {
@@ -130,7 +130,7 @@ header {
     border-top: 3px solid #494949;
     border-bottom: 3px solid #494949; }
     header .navInferior .dropdown .btn {
-      color: white;
+      color: #fff;
       border: 1px solid #494949; }
     header .navInferior .dropdown .dropdown-item:active {
       background-color: #a3e0ae; }
@@ -169,7 +169,7 @@ header {
           font-size: 16px;
           font-weight: 600;
           margin: 10px 15px;
-          color: white; }
+          color: #fff; }
           header .navInferior .categoriasContainer .categorias li a {
             transition: all 0.25s; }
             header .navInferior .categoriasContainer .categorias li a:hover {
@@ -204,7 +204,7 @@ header {
           background-color: transparent; }
         header .navSuperior .seccionesContainer .secciones li a {
           padding: 4px 8px;
-          color: white;
+          color: #fff;
           transition: all 0.25s; }
           header .navSuperior .seccionesContainer .secciones li a:hover {
             background-color: #79aa75;
@@ -253,7 +253,7 @@ header {
       font-size: 15px;
       margin-top: 5px !important;
       font-weight: 600; }
-    .productos article h6 {
+    .productos article h6, .productos article .carrito .carritoTotal span, .carrito .carritoTotal .productos article span {
       text-align: center;
       font-size: 12px;
       margin-bottom: 5px !important; }
@@ -264,7 +264,7 @@ header {
     height: 220px; }
   .productos article h4 {
     font-size: 18px; }
-  .productos article h6 {
+  .productos article h6, .productos article .carrito .carritoTotal span, .carrito .carritoTotal .productos article span {
     font-size: 15px; } }
 
 @media screen and (min-width: 1100px) {
@@ -272,7 +272,7 @@ header {
     height: 300px; }
   .productos article h4 {
     font-size: 22px; }
-  .productos article h6 {
+  .productos article h6, .productos article .carrito .carritoTotal span, .carrito .carritoTotal .productos article span {
     font-size: 18px; } }
 
 /* END MEDIA QUERIES */
@@ -310,7 +310,7 @@ header {
         background: #e2e2e2; }
       .cuentaContainer .cuenta .cuentaForm input:focus {
         background: #5a5a5a;
-        color: white;
+        color: #fff;
         outline: none; }
     .cuentaContainer .cuenta .cuentaForm .buttonContainer {
       display: flex;
@@ -327,7 +327,7 @@ header {
       font-size: 15px;
       margin-top: 15px; }
     .cuentaContainer .cuenta a {
-      color: white; }
+      color: #fff; }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -380,12 +380,9 @@ header {
     padding: 8px 10px;
     width: 100%;
     background: linear-gradient(#aaaaaa, #5c5c5c); }
-    .carrito .carritoTotal h6 {
+    .carrito .carritoTotal h6, .carrito .carritoTotal span {
       font-size: 18px;
-      color: white; }
-    .carrito .carritoTotal span {
-      font-size: 18px;
-      color: white; }
+      color: #fff; }
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -401,7 +398,7 @@ header {
       font-size: 35px; }
     .carrito h4 {
       font-size: 24px; }
-    .carrito h6 {
+    .carrito h6, .carrito .carritoTotal span {
       font-size: 24px; }
     .carrito .carritoTotal span {
       font-size: 24px; } }
@@ -488,7 +485,7 @@ header {
         text-align: center;
         font-size: 15px;
         margin-top: 5px; }
-      .macetasMain .productosMacetas article h6 {
+      .macetasMain .productosMacetas article h6, .macetasMain .productosMacetas article .carrito .carritoTotal span, .carrito .carritoTotal .macetasMain .productosMacetas article span {
         text-align: center;
         font-size: 12px;
         margin-bottom: 5px; }
@@ -505,7 +502,7 @@ header {
     height: 220px; }
   .macetasMain .productosMacetas article h4 {
     font-size: 18px; }
-  .macetasMain .productosMacetas article h6 {
+  .macetasMain .productosMacetas article h6, .macetasMain .productosMacetas article .carrito .carritoTotal span, .carrito .carritoTotal .macetasMain .productosMacetas article span {
     font-size: 15px; } }
 
 @media screen and (min-width: 1100px) {
@@ -519,7 +516,7 @@ header {
     height: 300px; }
   .macetasMain .productosMacetas article h4 {
     font-size: 22px; }
-  .macetasMain .productosMacetas article h6 {
+  .macetasMain .productosMacetas article h6, .macetasMain .productosMacetas article .carrito .carritoTotal span, .carrito .carritoTotal .macetasMain .productosMacetas article span {
     font-size: 18px; } }
 
 /* END MAIN MACETAS */
@@ -528,7 +525,7 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: #5bab54;
-  color: white;
+  color: #fff;
   padding-top: 15px; }
   footer h4 {
     font-size: 15px; }
@@ -580,9 +577,9 @@ footer {
       .footerInfo .redesSociales ul li {
         font-size: 30px;
         margin: 0 5px;
-        color: white; }
+        color: #fff; }
         .footerInfo .redesSociales ul li a {
-          color: white;
+          color: #fff;
           transition: all 0.25s; }
           .footerInfo .redesSociales ul li a:hover {
             transform: scale(0.95); }

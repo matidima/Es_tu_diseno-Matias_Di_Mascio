@@ -1,22 +1,19 @@
 /* FOOTER */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(91, 171, 84);
-    color: white;
+    @include flexColumn;
+    background-color: map-get($colores, verde);
+    color: map-get($colores, blanco);
     padding-top: 15px;
     h4 {
         font-size: 15px;
     }
     .footerMetodos {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         justify-content: space-evenly;
         margin: 15px 0 15px 20px;
         .pagos {
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             h4 {
                 font-weight: 600;
             }
@@ -26,8 +23,7 @@ footer {
             }
         }
         .envios {
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             margin-top: 5px;
             h4 {
                 font-weight: 600;
@@ -47,8 +43,7 @@ footer {
     flex-direction: column;
     margin-left: 20px;
     .contacto {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         margin-bottom: 20px;
         h4 {
             font-weight: 600;
@@ -65,8 +60,7 @@ footer {
         
     }
     .redesSociales {
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         h4 {
             font-weight: 600;
         }
@@ -75,9 +69,9 @@ footer {
             li {
                 font-size: 30px;
                 margin: 0 5px;
-                color: white;
+                color: map-get($colores, blanco);
                 a {
-                    color: white;
+                    color: map-get($colores, blanco);
                     transition: all 0.25s;
                     &:hover {
                         transform: scale(0.95);

@@ -1,11 +1,11 @@
 /* HEADER */
 
 header {
-  background-color: rgb(91, 171, 84);
+  background-color: map-get($colores, verde);
   display: flex;
   flex-direction: column;
   a {
-    color: white;
+    color: map-get($colores, blanco);
   }
   .navSuperior {
     display: flex;
@@ -21,7 +21,7 @@ header {
         align-items: center;
         margin: 20px 0;
         &:hover {
-          color: white;
+          color: map-get($colores, blanco);
         }
         img {
           height: 75px;
@@ -42,28 +42,28 @@ header {
         width: 9rem;
         padding-left: 7px;
         line-height: 25px;
-        background: white;
-        color: rgb(99, 173, 88);
+        background: map-get($colores, blanco);
+        color: #63ad58;
         border: none;
         border-radius: 18px;
         margin-right: 5px;
         &:hover {
-          background: rgb(226, 226, 226);
+          background: #e2e2e2;
         }
         &:focus {
-          background: rgb(90, 90, 90);
-          color: white;
+          background: #5a5a5a;
+          color: map-get($colores, blanco);
           outline: none;
         }
       }
       a {
         transition: all 0.25s;
         &:hover {
-          color: rgb(226, 226, 226);
+          color: #e2e2e2;
           transform: scale(0.95);
         }
         &:active {
-          color: rgb(27, 27, 27);
+          color: map-get($colores, negro);
         }
       }
     }
@@ -72,9 +72,9 @@ header {
       justify-content: center;
       align-items: center;
       font-size: 25px;
-      color: white;
+      color: map-get($colores, blanco);
       &:active {
-        color: rgb(27, 27, 27);
+        color: map-get($colores, negro);
       }
     }
     input#menu {
@@ -91,7 +91,7 @@ header {
       left: 0;
       width: 100%;
       height: 200px;
-      background-color: rgb(91, 171, 84);
+      background-color: map-get($colores, verde);
       .secciones {
         margin: 15px;
         display: flex;
@@ -103,9 +103,9 @@ header {
           top: 15px;
           right: 15px;
           font-size: 20px;
-          color: rgb(27, 27, 27);
+          color: map-get($colores, negro);
           &:active {
-            color: rgb(230, 230, 230);
+            color: #e6e6e6;
           }
         }
         li {
@@ -113,15 +113,15 @@ header {
           font-size: 24px;
           margin: 5px 0;
           padding: 0 8px;
-          background-color: rgb(163, 224, 174);
+          background-color: map-get($colores, verdeclarito);
           border-radius: 15px;
           &:active {
-            background-color: rgb(48, 48, 48);
+            background-color: map-get($colores, negroclarito);
           }
           a {
-            color: rgb(48, 48, 48);
+            color: map-get($colores, negroclarito);
             &:active {
-              color: rgb(230, 230, 230);
+              color: #e6e6e6;
             }
           }
           &:last-child {
@@ -135,15 +135,15 @@ header {
   .navInferior {
     display: flex;
     padding: 5px;
-    border-top: 3px solid rgb(73, 73, 73);
-    border-bottom: 3px solid rgb(73, 73, 73);
+    border-top: 3px solid map-get($colores, gris);
+    border-bottom: 3px solid map-get($colores, gris);
     .dropdown {
       .btn {
-        color: white;
-        border: 1px solid rgb(73, 73, 73);
+        color: map-get($colores, blanco);
+        border: 1px solid map-get($colores, gris);
       }
       .dropdown-item:active {
-        background-color: rgb(163, 224, 174);
+        background-color: map-get($colores, verdeclarito);
       }
     }
     .categoriasContainer {
@@ -201,15 +201,15 @@ header {
             font-size: 16px;
             font-weight: 600;
             margin: 10px 15px;
-            color: white;
+            color: map-get($colores, blanco);
             a {
               transition: all 0.25s;
               &:hover {
-                color: rgb(226, 226, 226);
+                color: #e2e2e2;
                 transform: scale(0.95);
               }
               &:active {
-                color: rgb(27, 27, 27);
+                color: map-get($colores, negro);
               }
             }
           }
@@ -253,15 +253,15 @@ header {
             }
             a {
               padding: 4px 8px;
-              color: white;
+              color: map-get($colores, blanco);
               transition: all 0.25s;
               &:hover {
-                background-color: rgb(121, 170, 117);
+                background-color: #79aa75;
                 border-radius: 15px;
                 transform: scale(0.95);
               }
               &:active {
-                color: rgb(27, 27, 27);
+                color: map-get($colores, negro);
               }
             }
             &:last-child {
@@ -269,7 +269,7 @@ header {
               border-radius: 0;
               transition: all 0.25s;
               &:hover {
-                background-color: rgb(121, 170, 117);
+                background-color: #79aa75;
                 border-radius: 50%;
               }
             }

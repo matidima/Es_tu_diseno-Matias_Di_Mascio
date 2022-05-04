@@ -21,9 +21,9 @@
                     transform: scale(0.95);
                 }
                 a {
-                    color: rgb(48, 48, 48);
+                    color: map-get($colores, negroclarito);
                     &:active {
-                        color:rgb(87, 214, 110)
+                        color: #57d66e;
                     }
                 }
             }
@@ -44,7 +44,7 @@
         flex-wrap: wrap;
         article {
             margin: 5px 10px;
-            border: 3px solid rgb(73, 73, 73);
+            border: 3px solid map-get($colores, gris);
             border-radius: 5px;
             transition: all 0.25s;
             &:hover {
@@ -52,7 +52,7 @@
                 cursor: pointer;
             }
             img {
-                border-bottom: 3px solid rgb(73, 73, 73);
+                border-bottom: 3px solid map-get($colores, gris);
                 height: 190px;
             }
             h4 {
