@@ -1,0 +1,142 @@
+/* MAIN MACETAS */
+
+.macetasMain {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    .filtrarMacetasContainer {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        .categoriasMacetas {
+                display: flex;
+                flex-direction: column;
+            h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            h3 {
+                font-size: 15px;
+                &:hover {
+                    transform: scale(0.95);
+                }
+                a {
+                    color: rgb(48, 48, 48);
+                    &:active {
+                        color:rgb(87, 214, 110)
+                    }
+                }
+            }
+        }
+        .filtrarMacetas {
+            display: flex;
+            align-items: center;
+            margin-left: 50px;
+            select {
+                font-size: 15px;
+            }
+        }
+    }
+    .productosMacetas {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        article {
+            margin: 5px 10px;
+            border: 3px solid rgb(73, 73, 73);
+            border-radius: 5px;
+            transition: all 0.25s;
+            &:hover {
+                transform: scale(0.95);
+                cursor: pointer;
+            }
+            img {
+                border-bottom: 3px solid rgb(73, 73, 73);
+                height: 190px;
+            }
+            h4 {
+                text-align: center;
+                font-size: 15px;
+                margin-top: 5px;
+            }
+            h6 {
+                text-align: center;
+                font-size: 12px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES */ 
+
+@media screen and (min-width: 768px) {
+    
+    .macetasMain {
+        .filtrarMacetasContainer {
+            .categoriasMacetas {
+                h2 {
+                font-size: 28px;
+                }
+                h3 {
+                    font-size: 18px;
+                }
+            }
+            .filtrarMacetas {
+                select {
+                    font-size: 18px;
+                }
+            }
+        }
+        .productosMacetas{
+            article {
+                img {
+                    height: 220px;
+                }
+                h4 {
+                    font-size: 18px;
+                }
+                h6 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    .macetasMain {
+        .filtrarMacetasContainer{
+            .categoriasMacetas {
+                h2 {
+                    font-size: 35px;
+                }
+                h3 {
+                    font-size: 24px;
+                }
+            }
+            .filtrarMacetas {
+                select {
+                    font-size: 24px;
+                }
+            }
+        }
+        .productosMacetas {
+            article {
+                img {
+                    height: 300px;
+                }
+                h4 {
+                    font-size: 22px;
+                }
+                h6 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+/* END MAIN MACETAS */
